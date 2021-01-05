@@ -4,10 +4,10 @@
   "package": "tk.zenithseeker.sectionsign.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-  ],
-  "client": [
     "SharedConstantsMixin",
     "FormattingMixin"
+  ],
+  "client": [
   ],
   "injectors": {
     "defaultRequire": 1
