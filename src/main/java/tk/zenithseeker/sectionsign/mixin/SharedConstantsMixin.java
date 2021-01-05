@@ -9,6 +9,6 @@ import net.minecraft.SharedConstants;
 public class SharedConstantsMixin {
 	@Overwrite
 	public static boolean isValidChar(char chr) {
-		return true;
+		return chr >= ' ' && chr != '\u007f';
 	}
 }
