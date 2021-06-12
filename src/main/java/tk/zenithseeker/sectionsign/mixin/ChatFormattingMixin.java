@@ -3,12 +3,12 @@ package tk.zenithseeker.sectionsign.mixin;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-import net.minecraft.util.Formatting;
+import net.minecraft.ChatFormatting;
 
-@Mixin(Formatting.class)
-public class FormattingMixin {
+@Mixin(ChatFormatting.class)
+public class ChatFormattingMixin {
 	@Overwrite
-	public static String strip(String string) {
+	public static String stripFormatting(String string) {
 		return string;
 	}
 }

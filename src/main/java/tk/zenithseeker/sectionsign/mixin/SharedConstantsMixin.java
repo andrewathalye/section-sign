@@ -8,7 +8,7 @@ import net.minecraft.SharedConstants;
 @Mixin(SharedConstants.class)
 public class SharedConstantsMixin {
 	@Overwrite
-	public static boolean isValidChar(char chr) {
+	public static boolean isAllowedChatCharacter(char chr) {
 		return chr >= ' ' && chr != '\u007f';
 	}
 }
